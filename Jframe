@@ -1,5 +1,6 @@
 // psvm main functiion
 
+//basic sketching of jframe
 
   JFrame frame = new JFrame();
         //frame assigned name
@@ -12,4 +13,14 @@
         frame.setSize(420,420);
         frame.setVisible(true); //to make this visiblew
 
-//basic sketching of jframe
+
+///to chnge icon
+
+
+        //creating image icon
+        ImageIcon image = new ImageIcon("mn.png");
+        frame.setIconImage(image.getImage()); //to chnge icon of frame
+
+///chnge background color
+
+frame.getContentPane().setBackground(Color.cyan);
