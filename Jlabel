@@ -9,3 +9,15 @@
 
         label.setBackground(Color.black);//chaging the color
         label.setOpaque(true);//display background color
+ ImageIcon image = new ImageIcon("mn.png");
+        JLabel label = new JLabel();
+        Border border = BorderFactory.createLineBorder(Color.green,3); //creating border
+
+        //set the text of the label
+        label.setText("Fuck off MF");
+        label.setIconTextGap(40);//to adjust the gap between  text and image
+        label.setIcon(image);//adding the image
+
+        label.setBackground(Color.black);//chaging the color
+        label.setOpaque(true);//display background color
+
