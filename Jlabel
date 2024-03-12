@@ -21,3 +21,13 @@
         label.setBackground(Color.black);//chaging the color
         label.setOpaque(true);//display background color
 
+   ///label end
+
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(420,420);
+        //frame.setLayout(null); //to manually change the location of components defualt border layout or something
+        frame.setVisible(true);
+        //add the label
+        frame.add(label);
+        frame.pack(); //reszie the components according to other components
