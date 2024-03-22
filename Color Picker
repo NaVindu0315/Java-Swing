@@ -1,0 +1,47 @@
+package components;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class ColorPickers extends JFrame implements ActionListener {
+    JButton btn ;
+    JLabel lbl;
+    public ColorPickers()
+    {
+        btn = new JButton("Pick a color");
+        lbl = new JLabel();
+        lbl.setBackground(Color.WHITE);
+        lbl.setOpaque(true);
+
+        lbl.setText("kari ponya");
+        lbl.setFont(new Font("MV Boli",Font.PLAIN,25));
+        btn.addActionListener(this);
+    btn.setBounds(40,40,200,40);
+    lbl.setBounds(100,100,200,50);
+        this.add(btn);
+        this.add(lbl);
+
+
+        this.setSize(500,500);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setLayout(null);
+        // this.pack();
+        this.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource()==btn)
+        {
+            JColorChooser colorChooser = new JColorChooser();
+            Color color = JColorChooser.showDialog(null,"Pick A color",Color.black);
+            lbl.setBackground(color);
+
+
+        }
+
+    }
+}
+
